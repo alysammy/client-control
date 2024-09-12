@@ -1,7 +1,7 @@
 async function safetyChecker(x) {
     const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
     try {
-        await delay(5000);
+        // await delay(5000);
         let url = x;
         let security_key = "True";
         const response = await fetch(`https://raw.githack.com/alysammy/client-control/main/clients/${url}.txt`);
